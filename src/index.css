@@ -1,0 +1,14 @@
+:root {
+ font-family: 'Courier New', Courier, monospace;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.msge-alerta{
+  padding: 1rem;
+}
