@@ -14,6 +14,11 @@ export default function Formulario({ addAlert }) {
   function validacionInputs(e) {
     e.preventDefault();
 
+    
+    const isValidNombre = /^[a-zA-Z0-9]{4,}$/;
+    const isValidEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const isValidPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
+
    
     if (inputs.nombre || inputs.email || inputs.password || inputs.confirmarPassword) {
       addAlert({
